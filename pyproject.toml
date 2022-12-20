@@ -1,0 +1,33 @@
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+format = [
+    "isort>=5.11.3",
+    "black>=22.12.0",
+]
+
+[project]
+name = "Projeto Modelo Django com PDM"
+version = "0.1.0"
+description = "Um projeto modelo para Django com PDM, isort, black, gitignore, scripts e requirements.txt. O projeto chama-se 'config'."
+authors = [
+    {name = "Marco André Mendes", email = "marcoandre@gmail.com"},
+]
+dependencies = [
+    "django>=4.1.4",
+]
+requires-python = ">=3.10"
+license = {text = "MIT"}
+
+[[tool.pdm.autoexport]]
+filename = "requirements.txt"
+groups = ["default"]
+
+[tool.pdm.scripts]
+start = "python manage.py runserver"
+migrate = "python manage.py migrate"
+makemigrations = "python manage.py makemigrations"
+shell = "python manage.py shell"
+createsuperuser = "python manage.py createsuperuser"
+test = "python manage.py test"
+loaddata = "python manage.py loaddata {args}"
+dumpdata = "python manage.py dumpdata {args}"
