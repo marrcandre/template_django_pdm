@@ -6,7 +6,7 @@ format = [
 ]
 
 [project]
-name = "Projeto Modelo Django com PDM"
+name = "template_django_pdm"
 version = "0.1.0"
 description = "Um projeto modelo para Django com PDM, isort, black, gitignore, scripts e requirements.txt. O projeto chama-se 'config'."
 authors = [
