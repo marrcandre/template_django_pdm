@@ -1,33 +1,42 @@
-[tool.pdm]
-[tool.pdm.dev-dependencies]
-format = [
-    "isort>=5.11.3",
-    "black>=22.12.0",
-]
-
 [project]
-name = "template_django_pdm"
-version = "0.1.0"
-description = "Um projeto modelo para Django com PDM, isort, black, gitignore, scripts e requirements.txt. O projeto chama-se 'config'."
-authors = [
-    {name = "Marco André Mendes", email = "marcoandre@gmail.com"},
-]
+name = ""
+version = ""
+description = ""
+authors = [{ name = "Marco André Mendes", email = "marcoandre@gmail.com" }]
 dependencies = [
     "django>=4.1.4",
+    "netifaces>=0.11.0",
+    "setuptools>=68.2.2",
+    "django-extensions>=3.2.3",
+    "pydotplus>=2.0.2",
 ]
 requires-python = ">=3.10"
-license = {text = "MIT"}
+license = { text = "MIT" }
+
+[tool.pdm]
+
+[tool.pdm.dev-dependencies]
+format = ["isort>=5.11.3", "black>=22.12.0"]
+dev = [
+    "isort>=5.12.0",
+    "black>=23.10.1",
+]
 
 [[tool.pdm.autoexport]]
 filename = "requirements.txt"
-groups = ["default"]
+without-hashes = "true"
 
 [tool.pdm.scripts]
-start = "python manage.py runserver"
-migrate = "python manage.py migrate"
-makemigrations = "python manage.py makemigrations"
-shell = "python manage.py shell"
+pre_dev = "python ./scripts/set_my_ip.py"
+dev = "python manage.py runserver 0.0.0.0:19003"
 createsuperuser = "python manage.py createsuperuser"
+pre_migrate = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+post_migrate = "python manage.py graph_models -g -o core.png core"
+shell = "python manage.py shell"
 test = "python manage.py test"
-loaddata = "python manage.py loaddata {args}"
-dumpdata = "python manage.py dumpdata {args}"
+loaddata = "python manage.py loaddata core.json"
+dumpdata = "python manage.py dumpdata core --indent 4 > core.json"
+
+[tool.black]
+line-length = 120
