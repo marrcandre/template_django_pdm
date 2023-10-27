@@ -9,6 +9,9 @@ dependencies = [
     "setuptools>=68.2.2",
     "django-extensions>=3.2.3",
     "pydotplus>=2.0.2",
+    "djangorestframework>=3.14.0",
+    "django-cors-headers>=4.3.0",
+    "drf-spectacular>=0.26.5",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -36,7 +39,7 @@ post_migrate = "python manage.py graph_models -g -o core.png core"
 shell = "python manage.py shell"
 test = "python manage.py test"
 loaddata = "python manage.py loaddata core.json"
-dumpdata = "python manage.py dumpdata core --indent 4 > core.json"
+dumpdata = "python manage.py dumpdata --indent 2"
 
 [tool.black]
 line-length = 120

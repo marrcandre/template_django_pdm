@@ -3,9 +3,12 @@
 
 asgiref==3.7.2
 django==4.2.6
+django-cors-headers==4.3.0
 django-extensions==3.2.3
+djangorestframework==3.14.0
 netifaces==0.11.0
 pydotplus==2.0.2
 pyparsing==3.1.1
+pytz==2023.3.post1
 setuptools==68.2.2
 sqlparse==0.4.3
