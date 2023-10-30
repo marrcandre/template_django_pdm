@@ -6,18 +6,19 @@ authors = [{ name = "Marco André Mendes", email = "marcoandre@gmail.com" }]
 dependencies = [
     "django>=4.1.4",
     "djangorestframework>=3.14.0",
+    "django-cloudinary-storage>=0.3.0",
     "django-cors-headers>=4.3.0",
     "django-extensions>=3.2.3",
+    "django-filter>=23.3",
     "drf-spectacular>=0.26.5",
+    "gunicorn>=21.2.0",
     "netifaces>=0.11.0",
+    "pre-commit>=3.5.0",
+    "psycopg2-binary>=2.9.9",
     "pydotplus>=2.0.2",
     "python-dotenv>=1.0.0",
     "setuptools>=68.2.2",
-    "gunicorn>=21.2.0",
     "whitenoise[brotli]>=6.6.0",
-    "psycopg2-binary>=2.9.9",
-    "django-cloudinary-storage>=0.3.0",
-    "django-filter>=23.3",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
@@ -51,3 +52,17 @@ dumpdata = "python manage.py dumpdata --indent 2"
 
 [tool.black]
 line-length = 120
+include = '\.piy?$'
+exclude = '''
+/(
+  \.git
+ | \.hg
+ | \.mypy_cache
+ | \.tox
+ | \.venv
+ | _build
+ | buck-out
+ | build
+ )/
+'''
+
