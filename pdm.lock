@@ -5,7 +5,7 @@
 groups = ["default", "format", "dev"]
 strategy = ["cross_platform"]
 lock_version = "4.4"
-content_hash = "sha256:ac489ca36bae713bab2e1b62661725d2c7274838bcd2550bade105a991db2817"
+content_hash = "sha256:40bf46e6bd480919a8a0049f58641c3230f27cd1960f63ca8bdad6f5d8e3cd28"
 
 [[package]]
 name = "asgiref"
@@ -277,6 +277,19 @@ dependencies = [
 files = [
     {file = "django-extensions-3.2.3.tar.gz", hash = "sha256:44d27919d04e23b3f40231c4ab7af4e61ce832ef46d610cc650d53e68328410a"},
     {file = "django_extensions-3.2.3-py3-none-any.whl", hash = "sha256:9600b7562f79a92cbf1fde6403c04fee314608fefbb595502e34383ae8203401"},
+]
+
+[[package]]
+name = "django-filter"
+version = "23.3"
+requires_python = ">=3.7"
+summary = "Django-filter is a reusable Django application for allowing users to filter querysets dynamically."
+dependencies = [
+    "Django>=3.2",
+]
+files = [
+    {file = "django-filter-23.3.tar.gz", hash = "sha256:015fe155582e1805b40629344e4a6cf3cc40450827d294d040b4b8c1749a9fa6"},
+    {file = "django_filter-23.3-py3-none-any.whl", hash = "sha256:65bc5d1d8f4fff3aaf74cb5da537b6620e9214fb4b3180f6c560776b1b6dccd0"},
 ]
 
 [[package]]
