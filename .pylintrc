@@ -1,0 +1,15 @@
+[MASTER]
+ignore=_pypackages_/*/.py
+disable=C0111, R0903, E1123
+
+[SIMILARITIES]
+min-similarity-lines=10
+ignore-comments=yes
+ignore-docstrings=yes
+ignore-imports=no
+
+[FORMAT]
+max-line-length=119
+
+[DESIGN]
+max-parents=15

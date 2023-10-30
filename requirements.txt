@@ -2,13 +2,22 @@
 # Please do not edit it manually.
 
 asgiref==3.7.2
+attrs==23.1.0
 django==4.2.6
 django-cors-headers==4.3.0
 django-extensions==3.2.3
 djangorestframework==3.14.0
+drf-spectacular==0.26.5
+inflection==0.5.1
+jsonschema==4.19.1
+jsonschema-specifications==2023.7.1
 netifaces==0.11.0
 pydotplus==2.0.2
 pyparsing==3.1.1
 pytz==2023.3.post1
+PyYAML==6.0.1
+referencing==0.30.2
+rpds-py==0.10.6
 setuptools==68.2.2
 sqlparse==0.4.3
+uritemplate==4.1.1
