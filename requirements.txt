@@ -3,15 +3,18 @@
 
 asgiref==3.7.2
 attrs==23.1.0
+Brotli==1.1.0
 django==4.2.6
 django-cors-headers==4.3.0
 django-extensions==3.2.3
 djangorestframework==3.14.0
 drf-spectacular==0.26.5
+gunicorn==21.2.0
 inflection==0.5.1
 jsonschema==4.19.1
 jsonschema-specifications==2023.7.1
 netifaces==0.11.0
+packaging==23.2
 pydotplus==2.0.2
 pyparsing==3.1.1
 python-dotenv==1.0.0
@@ -22,3 +25,4 @@ rpds-py==0.10.6
 setuptools==68.2.2
 sqlparse==0.4.3
 uritemplate==4.1.1
+whitenoise==6.6.0
