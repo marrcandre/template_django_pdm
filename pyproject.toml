@@ -53,7 +53,7 @@ dumpdata = "python manage.py dumpdata --indent 2"
 
 [tool.black]
 line-length = 120
-include = '\.piy?$'
+include = '\.pyi?$'
 exclude = '''
 /(
   \.git
@@ -64,6 +64,7 @@ exclude = '''
  | _build
  | buck-out
  | build
+ | __pypackages__
  )/
 '''
 
