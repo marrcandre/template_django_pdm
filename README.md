@@ -21,37 +21,35 @@ O template também traz o usuário padrão modificado, com o login sendo feito c
 
 1. Certifique-se de ter o [Python](https://www.python.org/) instalado em seu sistema.
 
-2. Clone este repositório usando o seguinte comando:
+2. Crie um novo projeto a partir desse template:
+- Acesse o _template_ em https://github.com/marrcandre/template_django_pdm.
+- Clique no botão `Use this template` em `Create a new repository`.
+- Preencha as informações solicitadas:
+  - `Owner`: <seu usuário no GitHub>
+  - `Repository name`: `livraria`
+- Click no botão `Create repository`.
 
-   ```
-   git clone https://github.com/marrcandre/template_django_pdm.git
-   ```
+3. Abra o projeto no vscode e execute o terminal.
 
-3. Navegue até o diretório da API:
-
-   ```
-   cd template_django_pdm
-   ```
-
-4. Crie um ambiente virtual usando o [PDM](https://pdm.fming.dev/):
+2. Crie um ambiente virtual usando o [PDM](https://pdm.fming.dev/):
 
    ```
    pdm install
    ```
 
-5. Crie o arquivo .env, a partir do arquivo .env.exemplo, e configure as variáveis de ambiente:
+3. Crie o arquivo .env, a partir do arquivo .env.exemplo, e configure as variáveis de ambiente:
 
    ```
    cp .env.exemplo .env
    ```
 
-6. Execute o servidor de desenvolvimento:
+4. Execute o servidor de desenvolvimento:
 
    ```
    pdm run dev
    ```
 
-7. Acesse a API em http://localhost:19003/api/
+5. Acesse a API em http://localhost:19003/api/
 
 ## Uso da API
 
