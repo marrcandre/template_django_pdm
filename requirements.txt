@@ -7,7 +7,9 @@ Brotli==1.1.0
 certifi==2023.11.17
 cfgv==3.4.0
 charset-normalizer==3.3.2
+click==8.1.7
 cloudinary==1.36.0
+colorama==0.4.6; platform_system == "Windows"
 distlib==0.3.7
 dj-database-url==2.1.0
 django==5.0.2
@@ -20,6 +22,7 @@ djangorestframework-simplejwt==5.3.1
 drf-spectacular==0.27.1
 filelock==3.13.1
 gunicorn==21.2.0
+h11==0.14.0
 identify==2.5.32
 idna==3.4
 inflection==0.5.1
@@ -47,5 +50,6 @@ typing-extensions==4.8.0
 tzdata==2023.3; sys_platform == "win32"
 uritemplate==4.1.1
 urllib3==2.1.0
+uvicorn==0.29.0
 virtualenv==20.24.6
 whitenoise==6.6.0
