@@ -20,6 +20,7 @@ dependencies = [
     "python-dotenv>=1.0.0",
     "setuptools>=68.2.2",
     "whitenoise[brotli]>=6.6.0",
+    "dj-database-url>=2.1.0",
 ]
 requires-python = ">=3.10"
 license = { text = "MIT" }
