@@ -9,6 +9,7 @@ cfgv==3.4.0
 charset-normalizer==3.3.2
 cloudinary==1.36.0
 distlib==0.3.7
+dj-database-url==2.1.0
 django==5.0.2
 django-cloudinary-storage==0.3.0
 django-cors-headers==4.3.1
@@ -42,7 +43,7 @@ rpds-py==0.13.1
 setuptools==69.1.0
 six==1.16.0
 sqlparse==0.4.4
-typing-extensions==4.8.0; python_version < "3.11"
+typing-extensions==4.8.0
 tzdata==2023.3; sys_platform == "win32"
 uritemplate==4.1.1
 urllib3==2.1.0
