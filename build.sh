@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-# Exit on error
+# Sai do script se houver algum erro
 set -o errexit
 
-# Update pip
+# Atualiza o pip
 pip install --upgrade pip
 
-# Modify this line as needed for your package manager (pip, poetry, etc.)
+# Instala as dependências
 pip install -r requirements.txt
 
-# Convert static asset files
+# Coleta os arquivos estáticos
 python manage.py collectstatic --no-input
 
-# Apply any outstanding database migrations
+# Aplica as migrações
 python manage.py migrate
