@@ -1,1 +1,1 @@
-from .user import CurrentUserView, UserViewSet
+from .user import UserViewSet
