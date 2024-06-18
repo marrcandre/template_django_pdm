@@ -52,5 +52,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     class Meta:
         """Meta options for the model."""
+
         verbose_name = "Usuário"
         verbose_name_plural = "Usuários"
