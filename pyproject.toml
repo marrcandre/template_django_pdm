@@ -14,7 +14,6 @@ dependencies = [
     'djangorestframework>=3.14.0',
     'drf-spectacular>=0.26.5',
     'gunicorn>=21.2.0',
-    'mysqlclient>=2.2.4',
     'netifaces>=0.11.0',
     'passage-identity>=2.1.4',
     'Pillow>=10.3.0',
