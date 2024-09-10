@@ -1,6 +1,6 @@
 # Template de projeto Django com DRF e PDM
 
-Esse é um template de projeto Django com DRF, PDM e muito mais. Ele já vem com algumas configurações e pacotes pré-instalados, como o [PDM](https://pdm.fming.dev/), [Django](https://www.djangoproject.com/), [Django REST Framework](https://www.django-rest-framework.org/), [PostgreSQL](https://www.postgresql.org/), [SQLite](https://www.sqlite.org/index.html), [Swagger](https://swagger.io/), [Black](), [isort](), [Fl0](), [Cloudinary](), [Corsheaders](), [Django-Extensions](), [Django-Filter](), [dotenv](), [drf-spectacular](), [gunicon](), [netifaces](), [rest-framework-simplejwt]() e [whitenoise]().
+Esse é um template de projeto Django com DRF, PDM e muito mais. Ele já vem com algumas configurações e pacotes pré-instalados, como o [PDM](https://pdm.fming.dev/), [Django](https://www.djangoproject.com/), [Django REST Framework](https://www.django-rest-framework.org/), [PostgreSQL](https://www.postgresql.org/), [SQLite](https://www.sqlite.org/index.html), [Swagger](https://swagger.io/), [Black](), [isort](), [Render](), [Cloudinary](), [Corsheaders](), [Django-Extensions](), [Django-Filter](), [dotenv](), [drf-spectacular](), [gunicon](), [netifaces](), [rest-framework-simplejwt]() e [whitenoise]().
 
 Esse template já está pronto para ser utilizado em produção, com o [Fl0](http://fl0.com) e o [PostgreSQL](https://www.postgresql.org/). Mas também pode ser utilizado em desenvolvimento, com o [PDM](https://pdm.fming.dev/) e o [SQLite](https://www.sqlite.org/index.html).
 
@@ -71,8 +71,8 @@ Esse projeto utiliza os seguintes pacotes e tecnologias:
 - [SQLite](https://www.sqlite.org/index.html): Banco de dados relacional, utilizado no ambiente de desenvolvimento.
 - [Swagger](https://swagger.io/): Framework para documentação de APIs REST.
 - [Black](https://github.com/psf/black): Ferramenta de formatação de código Python.
-- [isort](https://pycqa.github.io/isort/): Ferramenta de ordenação de imports Python.
-- [Fl0](http://fl0.com): Ferramenta de _deploy_ de aplicações backend e banco de dados.
+- [isort](https://pycqa.github.io/isort/): Ferramenta de ordenação de _imports_ Python.
+- [Render](http://render.com): Ferramenta de _deploy_ de aplicações _backend_.
 - [Cloudinary](https://cloudinary.com/): Serviço de armazenamento de arquivos estáticos em nuvem.
 - [Corsheaders](https://pypi.org/project/django-cors-headers/): Pacote para habilitar o CORS em aplicações Django. O CORS é utilizado para permitir que aplicações frontend acessem a API.
 - [Django-Extensions](https://django-extensions.readthedocs.io/en/latest/): Pacote com extensões para o Django, como o `shell_plus`, que permite acessar o shell do Django com todos os modelos importados e o comando `graph_models`, que gera um diagrama de classes dos modelos do projeto.
