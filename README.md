@@ -1,8 +1,8 @@
 # Template de projeto Django com DRF e PDM
 
-Esse é um template de projeto Django com DRF, PDM e muito mais. Ele já vem com algumas configurações e pacotes pré-instalados, como o [PDM](https://pdm.fming.dev/), [Django](https://www.djangoproject.com/), [Django REST Framework](https://www.django-rest-framework.org/), [PostgreSQL](https://www.postgresql.org/), [SQLite](https://www.sqlite.org/index.html), [Swagger](https://swagger.io/), [Black](), [isort](), [Render](), [Cloudinary](), [Corsheaders](), [Django-Extensions](), [Django-Filter](), [dotenv](), [drf-spectacular](), [gunicon](), [netifaces](), [rest-framework-simplejwt]() e [whitenoise]().
+Esse é um template de projeto Django com DRF, PDM e muito mais. Ele já vem com algumas configurações e pacotes pré-instalados, como o PDM, Django, Django REST Framework, PostgreSQL, SQLite, Swagger, black, isort, Render, Cloudinary, Corsheaders, Django-Extensions, Django-Filter, dotenv, dj-database-url, drf-spectacular, gunicorn, netifaces, rest-framework-simplejwt, whitenoise e passage.id
 
-Esse template já está pronto para ser utilizado em produção, com o [Fl0](http://fl0.com) e o [PostgreSQL](https://www.postgresql.org/). Mas também pode ser utilizado em desenvolvimento, com o [PDM](https://pdm.fming.dev/) e o [SQLite](https://www.sqlite.org/index.html).
+Esse template já está pronto para ser utilizado em produção, com o [Render](http://render.com) e o [PostgreSQL](https://www.postgresql.org/). Mas também pode ser utilizado em desenvolvimento, com o [PDM](https://pdm.fming.dev/) e o [SQLite](https://www.sqlite.org/index.html).
 
 O template também já vem com alguns arquivos de configuração pré-configurados, como:
 
@@ -16,6 +16,9 @@ O template também já vem com alguns arquivos de configuração pré-configurad
 
 O template também traz o usuário padrão modificado, com o login sendo feito com o `e-mail` e não com o `username`. Inclusões de campos, como `telefone`, `data de nascimento` e `foto de perfil`, podem ser feitas facilmente.
 
+O projeto Django criado chama-se `app` e a aplicação Django criada chama-se `core`. O projeto já vem com um modelo de usuário customizado, com autenticação pelo `passage.id`. Arquivos estáticos, como fotos, podem ser armazenados no [Cloudinary](https://cloudinary.com/).
+
+O projeto também já vem com a documentação da API, gerada automaticamente pelo Swagger, e com a formatação de código Python, feita pelo black e pelo isort.
 
 ## Instalação e Configuração
 
@@ -59,6 +62,7 @@ A documentação completa dos endpoints da API e exemplos de uso estão disponí
 
 - `pdm run dev`: Executa o servidor de desenvolvimento. Antes de executar o servidor, descobre o endereço IP da máquina e atualiza o arquivo `.env` com o endereço IP.
 - `pdm run migrate`: Executa as migrações do banco de dados. Antes de executar o `migrate`, executa o `makemigrations`. Depois de executar o `migrate`, executa o `graph_models`, atualizando o diagrama de classes dos modelos do projeto.
+- Para mais detalhes, consulte o arquivo `pyproject.toml`, na seção `[tool.pdm.scripts]`.
 
 ## Detalhes do Projeto
 
@@ -70,19 +74,21 @@ Esse projeto utiliza os seguintes pacotes e tecnologias:
 - [PostgreSQL](https://www.postgresql.org/): Banco de dados relacional, utilizado no ambiente de produção.
 - [SQLite](https://www.sqlite.org/index.html): Banco de dados relacional, utilizado no ambiente de desenvolvimento.
 - [Swagger](https://swagger.io/): Framework para documentação de APIs REST.
-- [Black](https://github.com/psf/black): Ferramenta de formatação de código Python.
+- [black](https://github.com/psf/black): Ferramenta de formatação de código Python.
 - [isort](https://pycqa.github.io/isort/): Ferramenta de ordenação de _imports_ Python.
 - [Render](http://render.com): Ferramenta de _deploy_ de aplicações _backend_.
 - [Cloudinary](https://cloudinary.com/): Serviço de armazenamento de arquivos estáticos em nuvem.
-- [Corsheaders](https://pypi.org/project/django-cors-headers/): Pacote para habilitar o CORS em aplicações Django. O CORS é utilizado para permitir que aplicações frontend acessem a API.
+- [Corsheaders](https://pypi.org/project/django-cors-headers/): Pacote para permitir que aplicações frontend acessem a API.
 - [Django-Extensions](https://django-extensions.readthedocs.io/en/latest/): Pacote com extensões para o Django, como o `shell_plus`, que permite acessar o shell do Django com todos os modelos importados e o comando `graph_models`, que gera um diagrama de classes dos modelos do projeto.
 - [Django-Filter](https://django-filter.readthedocs.io/en/stable/): Pacote para filtragem, ordenação e paginação de dados em APIs REST.
 - [dotenv](https://pypi.org/project/python-dotenv/): Pacote para carregar variáveis de ambiente a partir de um arquivo `.env`.
+- [dj-database-url](https://pypi.org/project/dj-database-url/): Pacote para configurar o banco de dados a partir de uma URL.
 - [drf-spectacular](https://drf-spectacular.readthedocs.io/en/latest/): Pacote para geração de documentação de APIs REST com o Swagger.
-- [gunicon](https://gunicorn.org/): Pacote para servir aplicações Django em produção.
+- [gunicorn](https://gunicorn.org/): Pacote para servir aplicações Django em produção.
 - [netifaces](https://pypi.org/project/netifaces/): Pacote para obter o endereço IP da máquina.
 - [rest-framework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/): Pacote para autenticação JWT em APIs REST.
 - [whitenoise](http://whitenoise.evans.io/en/stable/): Pacote para servir arquivos estáticos em aplicações Django.
+- [passage.id](https://passage.id): Pacote para autenticação de usuários.
 
 ## Licença
 
