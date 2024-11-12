@@ -5,7 +5,7 @@
 groups = ["default", "dev", "format"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:6dec607233904f52abe709b10facd81f326646cab27db462c1dbf77927c70403"
+content_hash = "sha256:1c5352d3bc9084e827218cc9ab0cfb5b119ef7a139d68f1459e078d06bc58e06"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -533,22 +533,6 @@ dependencies = [
 files = [
     {file = "djangorestframework-3.15.2-py3-none-any.whl", hash = "sha256:2b8871b062ba1aefc2de01f773875441a961fefbf79f5eed1e32b2f096944b20"},
     {file = "djangorestframework-3.15.2.tar.gz", hash = "sha256:36fe88cd2d6c6bec23dca9804bab2ba5517a8bb9d8f47ebc68981b56840107ad"},
-]
-
-[[package]]
-name = "djangorestframework-simplejwt"
-version = "5.3.1"
-requires_python = ">=3.8"
-summary = "A minimal JSON Web Token authentication plugin for Django REST Framework"
-groups = ["default"]
-dependencies = [
-    "django>=3.2",
-    "djangorestframework>=3.12",
-    "pyjwt<3,>=1.7.1",
-]
-files = [
-    {file = "djangorestframework_simplejwt-5.3.1-py3-none-any.whl", hash = "sha256:381bc966aa46913905629d472cd72ad45faa265509764e20ffd440164c88d220"},
-    {file = "djangorestframework_simplejwt-5.3.1.tar.gz", hash = "sha256:6c4bd37537440bc439564ebf7d6085e74c5411485197073f508ebdfa34bc9fae"},
 ]
 
 [[package]]

@@ -3,6 +3,7 @@
   "python.autoComplete.extraPaths": [
     "${workspaceFolder}/__pypackages__/3.10/lib"
   ],
+  "python.analysis.autoImportCompletions": true,
   "workbench.colorCustomizations": {
     "activityBar.activeBackground": "#93e6fc",
     "activityBar.background": "#93e6fc",

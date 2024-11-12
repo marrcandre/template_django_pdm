@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     "django_filters",
     "drf_spectacular",
     "rest_framework",
-    "rest_framework_simplejwt",
     "core",
 ]
 
@@ -131,11 +130,6 @@ else:
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-SIMPLE_JWT = {
-    "ACCESS_TOKEN_LIFETIME": timedelta(hours=8),
-    "REFRESH_TOKEN_LIFETIME": timedelta(days=30),
-}
-
 SPECTACULAR_SETTINGS = {
     "TITLE": "<PROJETO> API",
     "DESCRIPTION": "API para o projeto <descreva aqui seu projeto>.",
@@ -146,12 +140,10 @@ AUTH_USER_MODEL = "core.User"
 
 REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": ("core.authentication.TokenAuthentication",),  # Autenticação no passage.id
-    # "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated"),  # Permissão total para usuários autenticados
     "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly",), # Permissões através dos grupos do Django
     "DEFAULT_PAGINATION_CLASS": "rest_framework.pagination.PageNumberPagination",
     "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
     "PAGE_SIZE": 10,
-    # "DEFAULT_AUTHENTICATION_CLASSES": ("rest_framework_simplejwt.authentication.JWTAuthentication",), Autenticação com JWT
 }
 
 PASSAGE_APP_ID = os.getenv("PASSAGE_APP_ID", "app_id")
