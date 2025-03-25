@@ -1,19 +1,25 @@
 #!/usr/bin/env python3
 
+import contextlib
 import os
-import socket
+
+import netifaces as ni
+
 
 # Função para obter o IP do computador
 def get_current_ip():
-    try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        s.connect(('8.8.8.8', 80))
-        ip = s.getsockname()[0]
-        s.close()
-        return ip
-    except Exception as e:
-        print(f"Erro ao obter o IP: {e}")
-        return None
+    interfaces = ni.interfaces()
+
+    for interface in interfaces:
+        with contextlib.suppress(ValueError, KeyError):
+            addresses = ni.ifaddresses(interface)
+            ipv4_address = addresses[ni.AF_INET][0]["addr"]
+            # if ipv4_address != "127.0.0.1":
+            if ipv4_address.startswith("191."):
+                return ipv4_address
+
+    return None
+
 
 # Função para atualizar o arquivo .env com o novo IP
 def update_env_file(ip):
@@ -21,13 +27,13 @@ def update_env_file(ip):
         # Verifica se o arquivo .env existe
         if not os.path.isfile(".env"):
             # Cria o arquivo .env se ele não existir
-            with open(".env", "w") as new_file:
+            with open(".env", "w", encoding="utf-8") as new_file:
                 new_file.write(f"MY_IP={ip}\n")
         else:
-            with open(".env", "r") as file:
+            with open(".env", "r", encoding="utf-8") as file:
                 lines = file.readlines()
 
-            with open(".env", "w") as file:
+            with open(".env", "w", encoding="utf-8") as file:
                 for line in lines:
                     if line.startswith("MY_IP="):
                         continue
