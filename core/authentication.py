@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.core.exceptions import ObjectDoesNotExist
-
 from drf_spectacular.extensions import OpenApiAuthenticationExtension
 from drf_spectacular.plumbing import build_bearer_security_scheme_object
 from passageidentity import Passage, PassageError
