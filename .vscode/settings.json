@@ -25,6 +25,6 @@
   },
   "peacock.color": "#007fff",
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter"
+    "editor.defaultFormatter": "charliermarsh.ruff"
   }
 }
