@@ -64,7 +64,7 @@ test = "python manage.py test"
 loaddata = "python manage.py loaddata core.json"
 dumpdata = "python manage.py dumpdata --indent 2"
 cria_api = "python ./scripts/cria_api.py {args}"
-lint = "ruff check"
+check = "ruff check"
 pre_format = "ruff check --fix"
 format = "ruff format"
 
