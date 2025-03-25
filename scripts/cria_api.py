@@ -8,7 +8,8 @@ def create_files(param):
     # Lista de comandos
     commands = [
         f"touch core/models/{param}.py core/serializers/{param}.py core/views/{param}.py",
-        f"code core/models/{param}.py core/models/__init__.py core/serializers/{param}.py core/serializers/__init__.py core/views/{param}.py core/views/__init__.py core/admin.py app/urls.py",
+        f"code core/models/{param}.py core/models/__init__.py core/serializers/{param}.py "
+        f"core/serializers/__init__.py core/views/{param}.py core/views/__init__.py core/admin.py app/urls.py",
     ]
 
     # Executa cada comando
