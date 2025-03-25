@@ -9,10 +9,10 @@ from core.serializers import UserSerializer
 
 
 class UserViewSet(ModelViewSet):
-    queryset = User.objects.all().order_by("id")
+    queryset = User.objects.all().order_by('id')
     serializer_class = UserSerializer
 
-    @action(detail=False, methods=["get"], permission_classes=[IsAuthenticated])
+    @action(detail=False, methods=['get'], permission_classes=[IsAuthenticated])
     def me(self, request):
         """Return the current authenticated user"""
         user = request.user

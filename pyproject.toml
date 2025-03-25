@@ -39,13 +39,12 @@ without-hashes = "true"
 
 [tool.ruff]
 line-length = 120
-extend-exclude = ['migrations', '__init__.py']
+extend-exclude = ['migrations', '__init__.py', 'manage.py']
 
 [tool.ruff.lint]
 preview = true
 select = ['I', 'F', 'E', 'W', 'PL', 'PT']
 ignore = ["PLR6301"]
-
 
 [tool.ruff.format]
 preview = true
