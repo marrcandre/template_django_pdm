@@ -74,8 +74,7 @@ Esse projeto utiliza os seguintes pacotes e tecnologias:
 - [PostgreSQL](https://www.postgresql.org/): Banco de dados relacional, utilizado no ambiente de produção.
 - [SQLite](https://www.sqlite.org/index.html): Banco de dados relacional, utilizado no ambiente de desenvolvimento.
 - [Swagger](https://swagger.io/): Framework para documentação de APIs REST.
-- [black](https://github.com/psf/black): Ferramenta de formatação de código Python.
-- [isort](https://pycqa.github.io/isort/): Ferramenta de ordenação de _imports_ Python.
+- [Ruff] (http://https://docs.astral.sh/ruff/): Linter e formatador de código Python, escrito em Rust.
 - [Render](http://render.com): Ferramenta de _deploy_ de aplicações _backend_.
 - [Cloudinary](https://cloudinary.com/): Serviço de armazenamento de arquivos estáticos em nuvem.
 - [Corsheaders](https://pypi.org/project/django-cors-headers/): Pacote para permitir que aplicações frontend acessem a API.
