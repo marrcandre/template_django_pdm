@@ -9,11 +9,10 @@ dependencies = [
     'django-cors-headers>=4.3.0',
     'django-extensions>=3.2.3',
     'django-filter>=23.3',
-    'django>=5.0.6',
+    "django>=5.1.7",
     'djangorestframework>=3.14.0',
     'drf-spectacular>=0.26.5',
     'gunicorn>=21.2.0',
-    'netifaces>=0.11.0',
     'passage-identity>=2.5.1',
     'Pillow>=10.3.0',
     'pre-commit>=3.5.0',
@@ -33,7 +32,6 @@ license = { text = "MIT" }
 distribution = false
 
 [tool.pdm.dev-dependencies]
-format = ["isort>=5.11.3", "black>=22.12.0"]
 dev = [
     "black>=23.10.1",
     "isort>=5.12.0",

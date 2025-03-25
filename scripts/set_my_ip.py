@@ -1,24 +1,19 @@
 #!/usr/bin/env python3
 
-import contextlib
 import os
-
-import netifaces as ni
-
+import socket
 
 # Função para obter o IP do computador
 def get_current_ip():
-    interfaces = ni.interfaces()
-
-    for interface in interfaces:
-        with contextlib.suppress(ValueError, KeyError):
-            addresses = ni.ifaddresses(interface)
-            ipv4_address = addresses[ni.AF_INET][0]["addr"]
-            if ipv4_address != "127.0.0.1":
-                return ipv4_address
-
-    return None
-
+    try:
+        s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+        s.connect(('8.8.8.8', 80))
+        ip = s.getsockname()[0]
+        s.close()
+        return ip
+    except Exception as e:
+        print(f"Erro ao obter o IP: {e}")
+        return None
 
 # Função para atualizar o arquivo .env com o novo IP
 def update_env_file(ip):
