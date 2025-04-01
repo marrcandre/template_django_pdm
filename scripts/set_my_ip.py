@@ -23,13 +23,13 @@ def update_env_file(ip):
         # Verifica se o arquivo .env existe
         if not os.path.isfile('.env'):
             # Cria o arquivo .env se ele não existir
-            with open('.env', 'w') as new_file:
+            with open('.env', 'w', encoding='utf-8') as new_file:
                 new_file.write(f'MY_IP={ip}\n')
         else:
-            with open('.env', 'r') as file:
+            with open('.env', 'r', encoding='utf-8') as file:
                 lines = file.readlines()
 
-            with open('.env', 'w') as file:
+            with open('.env', 'w', encoding='utf-8') as file:
                 for line in lines:
                     if line.startswith('MY_IP='):
                         continue
