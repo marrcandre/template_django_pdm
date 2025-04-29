@@ -29,6 +29,30 @@ dependencies = [
 requires-python = ">=3.10"
 license = { text = "MIT" }
 
+[dependency-groups]
+dev = [
+  "pylint>=3.0.2",
+  "ipython>=8.26.0",
+  "ruff>=0.11.2",
+]
+
+[tool.pdm.scripts]
+pre_dev = "python ./scripts/set_my_ip.py"
+dev = "python manage.py runserver 0.0.0.0:19003"
+createsuperuser = "python manage.py createsuperuser"
+pre_migrate = "python manage.py makemigrations"
+migrate = "python manage.py migrate"
+post_migrate = "python manage.py graph_models -S -g -o core.png core"
+shell = "python manage.py shell"
+shellp = "python manage.py shell_plus"
+test = "python manage.py test"
+loaddata = "python manage.py loaddata core.json"
+dumpdata = "python manage.py dumpdata --indent 2"
+cria_api = "python ./scripts/cria_api.py {args}"
+check = "ruff check"
+pre_format = "ruff check --fix"
+format = "ruff format"
+
 [tool.pdm]
 distribution = false
 
@@ -48,27 +72,3 @@ ignore = ["PLR6301"]
 [tool.ruff.format]
 preview = true
 quote-style = 'single'
-
-[tool.pdm.scripts]
-pre_dev = "python ./scripts/set_my_ip.py"
-dev = "python manage.py runserver 0.0.0.0:19003"
-createsuperuser = "python manage.py createsuperuser"
-pre_migrate = "python manage.py makemigrations"
-migrate = "python manage.py migrate"
-post_migrate = "python manage.py graph_models -S -g -o core.png core"
-shell = "python manage.py shell"
-shellp = "python manage.py shell_plus"
-test = "python manage.py test"
-loaddata = "python manage.py loaddata core.json"
-dumpdata = "python manage.py dumpdata --indent 2"
-cria_api = "python ./scripts/cria_api.py {args}"
-check = "ruff check"
-pre_format = "ruff check --fix"
-format = "ruff format"
-
-[dependency-groups]
-dev = [
-  "pylint>=3.0.2",
-  "ipython>=8.26.0",
-  "ruff>=0.11.2",
-]

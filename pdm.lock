@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["inherit_metadata"]
 lock_version = "4.5.0"
-content_hash = "sha256:373c926e05f65b99d8eb503c43aa02a8413964724b86010c9eb2c10fd4ecbda2"
+content_hash = "sha256:7ffd61c468e3a539f821ee2adb3d07af24a50b102643416572628f0291b52810"
 
 [[metadata.targets]]
 requires_python = ">=3.10"
@@ -759,15 +759,6 @@ files = [
     {file = "mysqlclient-2.2.7-cp313-cp313-win_amd64.whl", hash = "sha256:201a6faa301011dd07bca6b651fe5aaa546d7c9a5426835a06c3172e1056a3c5"},
     {file = "mysqlclient-2.2.7-pp310-pypy310_pp73-win_amd64.whl", hash = "sha256:92af368ed9c9144737af569c86d3b6c74a012a6f6b792eb868384787b52bb585"},
     {file = "mysqlclient-2.2.7.tar.gz", hash = "sha256:24ae22b59416d5fcce7e99c9d37548350b4565baac82f95e149cac6ce4163845"},
-]
-
-[[package]]
-name = "netifaces"
-version = "0.11.0"
-summary = "Portable network interface information."
-groups = ["default"]
-files = [
-    {file = "netifaces-0.11.0.tar.gz", hash = "sha256:043a79146eb2907edf439899f262b3dfe41717d34124298ed281139a8b93ca32"},
 ]
 
 [[package]]
