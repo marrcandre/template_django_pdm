@@ -2,88 +2,64 @@
 # Please do not edit it manually.
 
 annotated-types==0.7.0
-asgiref==3.8.1
-astroid==3.3.9
-asttokens==3.0.0
-attrs==24.2.0
-brotli==1.1.0
-certifi==2024.8.30
-cffi==1.17.1; platform_python_implementation != "PyPy"
-cfgv==3.4.0
-charset-normalizer==3.4.0
-click==8.1.7
-cloudinary==1.41.0
+asgiref==3.11.1
+attrs==25.4.0
+brotli==1.2.0
+certifi==2026.2.25
+cffi==2.0.0; platform_python_implementation != "PyPy"
+cfgv==3.5.0
+charset-normalizer==3.4.4
+click==8.3.1
+cloudinary==1.44.1
 colorama==0.4.6; sys_platform == "win32" or platform_system == "Windows"
-cryptography==44.0.2
-decorator==5.2.1
-dill==0.3.9
-distlib==0.3.9
-dj-database-url==2.3.0
-django==5.1.7
+cryptography==44.0.3
+distlib==0.4.0
+dj-database-url==3.1.2
+django==5.2.11
 django-cloudinary-storage==0.3.0
-django-cors-headers==4.7.0
-django-extensions==3.2.3
-django-filter==25.1
-djangorestframework==3.15.2
-drf-spectacular==0.28.0
-exceptiongroup==1.2.2; python_version < "3.11"
-executing==2.2.0
-filelock==3.16.1
-gunicorn==23.0.0
-h11==0.14.0
-identify==2.6.1
-idna==3.10
+django-cors-headers==4.9.0
+django-extensions==4.1
+django-filter==25.2
+djangorestframework==3.16.1
+drf-spectacular==0.29.0
+filelock==3.24.3
+gunicorn==25.1.0
+h11==0.16.0
+identify==2.6.16
+idna==3.11
 inflection==0.5.1
-ipython==8.34.0
-isort==6.0.1
-jedi==0.19.2
-jsonschema==4.23.0
-jsonschema-specifications==2024.10.1
-matplotlib-inline==0.1.7
-mccabe==0.7.0
-mysqlclient==2.2.7
-netifaces==0.11.0
-nodeenv==1.9.1
-packaging==24.1
-parso==0.8.4
-passage-identity==3.0.1
-pexpect==4.9.0; sys_platform != "win32" and sys_platform != "emscripten"
-pillow==11.1.0
-platformdirs==4.3.6
-pre-commit==4.2.0
-prompt-toolkit==3.0.50
-psycopg2-binary==2.9.10
-ptyprocess==0.7.0; sys_platform != "win32" and sys_platform != "emscripten"
-pure-eval==0.2.3
-pycparser==2.22; platform_python_implementation != "PyPy"
-pydantic==2.10.6
-pydantic-core==2.27.2
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+nodeenv==1.10.0
+packaging==26.0
+passage-identity==3.0.2
+pillow==12.1.1
+platformdirs==4.9.2
+pre-commit==4.5.1
+psycopg2-binary==2.9.11
+pycparser==3.0; implementation_name != "PyPy" and platform_python_implementation != "PyPy"
+pydantic==2.12.5
+pydantic-core==2.41.5
 pydotplus==2.0.2
-pygments==2.19.1
-pyjwt==2.9.0
-pylint==3.3.6
-pyparsing==3.2.0
+pyjwt==2.11.0
+pyparsing==3.3.2
 python-dateutil==2.9.0.post0
-python-dotenv==1.1.0
+python-discovery==1.1.0
+python-dotenv==1.2.1
 python-magic==0.4.27; sys_platform == "linux"
 python-magic-bin==0.4.14; sys_platform == "win32"
-pyyaml==6.0.2
-referencing==0.35.1
-requests==2.32.3
-rpds-py==0.20.1
-ruff==0.11.2
-setuptools==78.0.2
-six==1.16.0
-sqlparse==0.5.1
-stack-data==0.6.3
-tomli==2.0.2; python_version < "3.11"
-tomlkit==0.13.2
-traitlets==5.14.3
-typing-extensions==4.12.2
-tzdata==2024.2; sys_platform == "win32"
-uritemplate==4.1.1
-urllib3==2.0.7
-uvicorn==0.34.0
-virtualenv==20.27.1
-wcwidth==0.2.13
-whitenoise[brotli]==6.9.0
+pyyaml==6.0.3
+referencing==0.37.0
+requests==2.32.5
+rpds-py==0.30.0
+setuptools==82.0.0
+six==1.17.0
+sqlparse==0.5.5
+typing-extensions==4.15.0
+typing-inspection==0.4.2
+tzdata==2025.3; sys_platform == "win32"
+uritemplate==4.2.0
+urllib3==2.6.3
+uvicorn==0.41.0
+virtualenv==21.1.0
+whitenoise[brotli]==6.12.0
