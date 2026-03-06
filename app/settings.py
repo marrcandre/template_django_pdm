@@ -144,16 +144,20 @@ AUTH_USER_MODEL = 'core.User'
 
 # Configurações do Django REST Framework
 REST_FRAMEWORK = {
-    # "DEFAULT_AUTHENTICATION_CLASSES": ("core.authentication.TokenAuthentication",),
-    # "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly",),
+    'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_simplejwt.authentication.JWTAuthentication',),
     'DEFAULT_PAGINATION_CLASS': 'app.pagination.CustomPagination',
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
     'PAGE_SIZE': 10,
 }
 
-# Configurações do Passage (Autenticação)
-PASSAGE_APP_ID = os.getenv('PASSAGE_APP_ID', 'app_id')
-PASSAGE_API_KEY = os.getenv('PASSAGE_API_KEY', 'api_key')
+# Configurações do Simple JWT
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=1),
+    'AUTH_HEADER_TYPES': ('Bearer',),
+}
 
 # Exibe as configurações principais para verificação
 print(f'{MODE = } \n{MEDIA_URL = } \n{DATABASES = }')
