@@ -23,7 +23,7 @@ urlpatterns = [
     # OpenAPI 3
     path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
     path(
-        'api/swagger/',
+        'api/doc/',
         SpectacularSwaggerView.as_view(url_name='schema'),
         name='swagger-ui',
     ),
