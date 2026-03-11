@@ -3,10 +3,9 @@
   "model": "core.user",
   "pk": 1,
   "fields": {
-    "password": "pbkdf2_sha256$720000$3UASVRfnCnaeFfvZSnQH1Q$tDhaD0/jqYC4S6w54ocZwyEXfBDgwifcQ8oEQ2FQSB0=",
-    "last_login": "2024-08-27T12:18:08.250Z",
+    "password": "pbkdf2_sha256$1000000$7WWh9s6jMzry2Gbnx30H8d$wIZzPnIKrhbOpBi0Ny25dtOcRoOK+ileRqPtzv+CUQk=",
+    "last_login": "2026-03-11T18:29:40.363Z",
     "is_superuser": true,
-    "passage_id": "324321544235435",
     "email": "a@a.com",
     "name": "Superusuário",
     "is_active": true,
@@ -19,14 +18,13 @@
   "model": "core.user",
   "pk": 2,
   "fields": {
-    "password": "!guOeigiAEXjwTck0ZQ9oI58VjCo7jdEJhTzzyREJ",
+    "password": "pbkdf2_sha256$1000000$gDw2xQZgwFkYpidganQBRU$8lNQVIM3rCWmyLCdPM0a3pcSHLmLYRZfhg1/snempV0=",
     "last_login": null,
-    "is_superuser": false,
-    "passage_id": "hdxkeqXbF8bp1Ql3dNJ0PoTB",
+    "is_superuser": true,
     "email": "marcoandre@gmail.com",
-    "name": null,
+    "name": "Marco André Lopes Mendes",
     "is_active": true,
-    "is_staff": false,
+    "is_staff": true,
     "groups": [],
     "user_permissions": []
   }
