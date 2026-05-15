@@ -28,6 +28,12 @@ class UserViewSet(ModelViewSet):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
 
+@extend_schema(
+    summary="Registro de novo usuário",
+    description="Cria um novo usuário no sistema. Não requer autenticação.",
+    request=UserRegistrationSerializer,
+    responses={201: UserRegistrationSerializer, 400: None},
+)
 class UserRegistrationView(CreateAPIView):
     """Endpoint para registro de novos usuários."""
 
