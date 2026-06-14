@@ -5,6 +5,7 @@ from rest_framework.generics import CreateAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.parsers import MultiPartParser, FormParser
 
 from core.models import User
 from core.serializers import UserRegistrationSerializer, UserSerializer
@@ -24,8 +25,9 @@ class UserViewSet(ModelViewSet):
     def me(self, request):
         """ Retorna os dados do usuário autenticado."""
         user = request.user
-        serializer = UserSerializer(user)
+        serializer = self.get_serializer(request.user)
         return Response(serializer.data, status=status.HTTP_200_OK)
+
 
 
 class UserRegistrationView(CreateAPIView):
@@ -34,3 +36,4 @@ class UserRegistrationView(CreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserRegistrationSerializer
     permission_classes = [AllowAny]
+    parser_classes = [MultiPartParser, FormParser]
