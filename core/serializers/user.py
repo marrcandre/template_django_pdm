@@ -1,13 +1,14 @@
 from rest_framework import serializers
 from rest_framework.serializers import ModelSerializer
 
+
 from core.models import User
 
 
 class UserSerializer(ModelSerializer):
     class Meta:
         model = User
-        fields = ['id', 'email', 'name', 'is_active', 'is_staff', 'is_superuser', 'last_login', 'groups']
+        fields = ['id', 'email', 'name', 'is_active', 'is_staff', 'is_superuser', 'last_login', 'groups', 'profile_image']
         depth = 1
 
 
@@ -16,7 +17,7 @@ class UserRegistrationSerializer(ModelSerializer):
 
     class Meta:
         model = User
-        fields = ['id', 'email', 'name', 'password']
+        fields = ['id', 'email', 'name', 'password', 'profile_image']
 
     def create(self, validated_data):
         return User.objects.create_user(**validated_data)
