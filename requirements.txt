@@ -2,56 +2,56 @@
 # Please do not edit it manually.
 
 asgiref==3.11.1
-attrs==25.4.0
+attrs==26.1.0
 brotli==1.2.0
-certifi==2026.2.25
+certifi==2026.6.17
 cfgv==3.5.0
-charset-normalizer==3.4.5
-click==8.3.1
-cloudinary==1.44.1
+charset-normalizer==3.4.7
+click==8.4.2
+cloudinary==1.44.4
 colorama==0.4.6; sys_platform == "win32" or platform_system == "Windows"
-distlib==0.4.0
+distlib==0.4.3
 dj-database-url==3.1.2
-django==5.2.12
+django==5.2.15
 django-cloudinary-storage==0.3.0
 django-cors-headers==4.9.0
 django-extensions==4.1
 django-filter==25.2
-djangorestframework==3.16.1
+djangorestframework==3.17.1
 djangorestframework-simplejwt==5.5.1
 drf-spectacular==0.29.0
-filelock==3.25.0
-gunicorn==25.1.0
+filelock==3.29.4
+gunicorn==26.0.0
 h11==0.16.0
-identify==2.6.17
-idna==3.11
+identify==2.6.19
+idna==3.18
 inflection==0.5.1
 jsonschema==4.26.0
 jsonschema-specifications==2025.9.1
 nodeenv==1.10.0
-packaging==26.0
-pillow==12.1.1
-platformdirs==4.9.4
-pre-commit==4.5.1
-psycopg2-binary==2.9.11
+packaging==26.2
+pillow==12.2.0
+platformdirs==4.10.0
+pre-commit==4.6.0
+psycopg2-binary==2.9.12
 pydotplus==2.0.2
-pyjwt==2.11.0
+pyjwt==2.13.0
 pyparsing==3.3.2
-python-discovery==1.1.0
+python-discovery==1.4.2
 python-dotenv==1.2.2
 python-magic==0.4.27; sys_platform == "linux"
 python-magic-bin==0.4.14; sys_platform == "win32"
 pyyaml==6.0.3
 referencing==0.37.0
-requests==2.32.5
+requests==2.34.2
 rpds-py==0.30.0
-setuptools==82.0.0
+setuptools==82.0.1
 six==1.17.0
 sqlparse==0.5.5
 typing-extensions==4.15.0; python_version < "3.13"
-tzdata==2025.3; sys_platform == "win32"
+tzdata==2026.2; sys_platform == "win32"
 uritemplate==4.2.0
-urllib3==2.6.3
-uvicorn==0.41.0
-virtualenv==21.1.0
+urllib3==2.7.0
+uvicorn==0.49.0
+virtualenv==21.5.1
 whitenoise[brotli]==6.12.0
