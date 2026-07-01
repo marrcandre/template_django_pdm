@@ -1,8 +1,7 @@
-from django.contrib import admin
-from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
-
+from django.contrib import admin
+from django.urls import include, path
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
@@ -15,7 +14,7 @@ from rest_framework_simplejwt.views import (
     TokenVerifyView,
 )
 
-from core.views import UserRegistrationView, UserViewSet, FreelanceViewSet
+from core.views import FreelanceViewSet, UserRegistrationView, UserViewSet
 
 router = DefaultRouter()
 
